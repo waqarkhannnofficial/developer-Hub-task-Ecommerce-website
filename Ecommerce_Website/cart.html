@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title> <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="cart.css">
+    <script src="products-data.js" defer></script>
+    <script src="cart-badge.js" defer></script>
+    <script src="cart.js" defer></script>
+</head>
+<body data-page="cart">
+    <!-- header  -->
+    <header>
+      <div class="header">
+        <div class="brand-logo" style="cursor: pointer;" onclick="window.location.href='main.html'">
+          <i class="fa-brands fa-amazon"></i>
+          Brand
+        </div>
+
+      
+<!-- actions  -->
+        <div class="actions">
+          <div class="profile-action action">
+            <i class="fa-solid fa-user"></i>
+            profile
+          </div>
+          <div class="message-action action">
+            <i class="fa-solid fa-message"></i>
+            Message
+          </div>
+          <div class="order-action action">
+            <i class="fa-solid fa-heart"></i>
+            Order
+          </div>
+          <div class="cart-action action" style="cursor: pointer;" onclick="window.location.href='cart.html'">
+            <i class="fa-solid fa-cart-shopping"></i>
+            My cart
+            <span class="badge" style="display: none; background: red; color: white; border-radius: 50%; padding: 2px 6px; font-size: 0.7rem; margin-left: 5px;">0</span>
+          </div>
+        </div>
+      </div>
+
+      
+     
+    </header>
+<main>
+
+<section class="cart-section">
+<div class="my-carts">
+   <!-- Cart items will be dynamically inserted here by cart.js -->
+   <div class="more-btns">
+     <button id="back">Back to Shop</button>
+     <button id="remove-all">Remove All</button>
+   </div>
+</div>
+
+
+
+<!-- Aside  -->
+<div class="cart-aside">
+    <div class="cuopon">
+        <p>Have a cuopon ?</p>
+<div>        <input type="search" placeholder="Add Cuopon"> <button>Apply</button></div>
+    </div>
+    <div class="aside-summary">
+        <!-- Summary will be dynamically populated by cart.js -->
+    </div>
+</div>
+</section>
+<!-- service section   -->
+<section class="services">
+    <div class="security service">
+        <div class="icon"></div>
+        <div class="text">
+            <h3>Secure Payment</h3>
+            <p>Have you ever finally just</p>
+        </div>
+    </div>
+
+     <div class="security service">
+        <div class="icon"></div>
+        <div class="text">
+            <h3>Customer Support </h3>
+            <p>Have you ever finally just</p>
+        </div>
+    </div>
+
+     <div class="security service">
+        <div class="icon"></div>
+        <div class="text">
+            <h3>Free Delivery</h3>
+            <p>Have you ever finally just</p>
+        </div>
+    </div>
+
+</section>
+
+ <!-- recommended -->
+ <section class="recommended-cart-items">
+    <div class="title">
+        <h2>Saved for later</h2>
+        <div class="items-container">
+            <!-- Saved items will be dynamically inserted here by cart.js -->
+        </div>
+    </div>
+ </section>
+
+
+
+ <!-- bannner  -->
+              <section class="banner">
+                <div class="text">
+                    <h2>Super discount on more than 100 USD</h2>
+                    <p>Have you ever finally just write dummy info</p>
+                </div>
+                <div class="btn">
+                    <button onclick="window.location.href='main.html'">Shop Now</button>
+                </div>
+              </section>
+</main>
+
+
+<!-- footer  -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-col-1 col">
+          <div class="logo">
+            <h2>Brand</h2>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque possimus  ex.</p>
+          <div class="social-links">
+            <a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a>
+          </div>
+        </div>
+        <div class="footer-col-2 col">
+          <h3>About</h3>
+        <div class="links">
+          <a href="#">About Us</a>
+          <a href="#">Find Store</a>
+          <a href="#">categories</a>
+          <a href="#">Blogs</a>
+        </div>
+        </div>
+      
+        <div class="footer-col-2 col">
+          <h3>About</h3>
+        <div class="links">
+          <a href="#">Help Center</a>
+          <a href="#">Money refund</a>
+          <a href="#">shipping</a>
+          <a href="#">Contact Us</a>
+        </div>
+        </div>
+
+        <div class="footer-col-2 col">
+          <h3>About</h3>
+        <div class="links">
+          <a href="#">Login</a>
+          <a href="#">register</a>
+          <a href="#">Settings</a>
+          <a href="#">My Oredrs</a>
+        </div>
+        </div>
+
+
+        <div class="footer-col-2 col">
+          <h3>Get app</h3>
+          <div class="app-card">
+            <p>Download on the</p>
+            <h3>App Store</h3>
+          </div>
+          <div class="app-card">
+            <p>GET IT ON</p>
+            <h3>Google Play</h3>
+          </div>
+        </div>
+        </div>
+
+
+        
+      </div>
+      <div class="footer-bottom">
+        <p>© 2023 Ecommerce.</p>
+        <select name="" id="">
+          <option value="English">English</option>
+          <option value="English">England</option>
+          <option value="English">Pakistan</option>
+          <option value="English">India</option>
+        </select>
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+     <link rel="stylesheet" href="list.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="products-data.js" defer></script>
+    <script src="shared.js" defer></script>
+    <script src="products-data.js" defer></script>
+    <script src="cart-badge.js" defer></script>
+    <script src="list.js" defer></script>
+</head>
+<body data-page="list">
+      <!-- header  -->
+    <header>
+      <div class="header">
+        <div class="brand-logo" style="cursor: pointer;" onclick="window.location.href='main.html'">
+          <i class="fa-brands fa-amazon"></i>
+          Brand
+        </div>
+
+        <div class="search-form">
+          <input type="search" id="search-input" placeholder="search" />
+          <select name="" id="search-category">
+            <option value="all">All Category</option>
+            <option value="Electronics">Electronic</option>
+            <option value="Fashion">Fashion</option>
+            <option value="Clothes">Clothes</option>
+            <option value="Shoes">Shoes</option>
+          </select>
+          <button id="search-btn">Search</button>
+        </div>
+
+        <div class="actions">
+          <div class="profile-action action">
+            <i class="fa-solid fa-user"></i>
+            profile
+          </div>
+          <div class="message-action action">
+            <i class="fa-solid fa-message"></i>
+            Message
+          </div>
+          <div class="order-action action">
+            <i class="fa-solid fa-heart"></i>
+            Order
+          </div>
+          <div class="cart-action action" style="cursor: pointer;" onclick="window.location.href='cart.html'">
+            <i class="fa-solid fa-cart-shopping"></i>
+            My cart
+            <span class="badge" style="display: none; background: red; color: white; border-radius: 50%; padding: 2px 6px; font-size: 0.7rem; margin-left: 5px;">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="navbar">
+        <!-- lists  -->
+        <div class="nav-list">
+          <a href="#"><i class="fa-solid fa-bars"></i> All Category</a>
+          <a href="#">Hot offers</a>
+          <a href="#">Gift Boxes</a>
+          <a href="#">Projects</a>
+          <a href="#">Meu item</a>
+          <select name="help" id="">
+            <option value="Help">Help</option>
+          </select>
+        </div>
+
+        <div class="nav-right">
+          <div class="payment">
+            English ,
+            <select >
+              <option value="usd">USD</option>
+              <option value="usd">PKR</option>
+              <option value="inr">INR</option>
+            </select>
+          </div>
+          <div class="shipto">
+            Ship to
+            <select >
+              <option value="pakistan">Pakistan</option>
+              <option value="germany">Germany</option>
+              <option value="india">India</option>
+              <option value="england">England</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+       <div class="bread-cump">
+        <a href="main.html" style="cursor: pointer;">Home</a>
+        <a href="#" style="cursor: pointer;">Clothings</a>
+        <a href="#" style="cursor: pointer;">Men's Wear</a>
+        <a href="#" style="cursor: pointer;">Summer clothing</a>
+    </div>
+    </header>
+    <main>
+      <div class="left">
+          <section class="side-bar">
+<div class="groups-bar">
+  <div class="group-1 group">
+    <h2>Category</h2>
+    <a href="#" class="category-filter" data-category="Mobile accessory">Mobile accessory</a>
+    <a href="#" class="category-filter" data-category="Electronics">Electronics</a>
+    <a href="#" class="category-filter" data-category="smartphones">smartphones</a>
+    <a href="#" class="category-filter" data-category="Modern tech">Modern tech</a>
+ <div>
+     <a href="#" id="see-all">See all</a>
+ </div>
+  </div>
+  <!-- 2 -->
+  <div class="group-2 group">
+    <h2>Brands</h2>
+   <div> <label for="samsung"><input type="checkbox" id="samsung">Samsung</label></div>
+   <div> <label for="iphone"><input type="checkbox" id="iphone">iphone</label></div>
+   <div> <label for="Techno"><input type="checkbox" id="Techno">Techno</label></div>
+   <div> <label for="Lenovo"><input type="checkbox" id="Lenovo">Lenovo</label></div>
+   <div> <label for="Real me"><input type="checkbox" id="Real me">Real me</label></div>
+   <div>
+    <a href="#" id="see-all">See all</a>
+   </div>
+  </div>
+  <!-- 3 -->
+  <div class="group-3 group">
+     <h2>Features</h2>
+   <div> <label for="metalic"><input type="checkbox" id="metalic">metalic</label></div>
+   <div> <label for="plastic cover"><input type="checkbox" id="plastic cover">plastic cover</label></div>
+   <div> <label for="super power"><input type="checkbox" id="super power">super power</label></div>
+   <div> <label for="large memory"><input type="checkbox" id="large memory">large memory</label></div>
+   <div> <label for="samsung"><input type="checkbox" id="samsung">Samsung</label></div>
+   <div>
+    <a href="#" id="see-all">See all</a>
+   </div>
+  </div>
+  <!-- 4 -->
+  <div class="group-4 group">
+     <h2>Brands</h2>
+   <div> <label for="black"><input type="checkbox" id="black">black</label></div>
+   <div> <label for="orange"><input type="checkbox" id="orange">orange</label></div>
+   <div> <label for="pink"><input type="checkbox" id="pink">pink</label></div>
+   <div> <label for="khaki"><input type="checkbox" id="khaki">khaki</label></div>
+   <div> <label for="yellow"><input type="checkbox" id="yellow">yellow</label></div>
+   <div>
+    <a href="#" id="see-all">See all</a>
+   </div>
+  </div>
+</div>
+        </section>
+      </div>
+
+<!-- right  -->
+        <div class="right">
+            <section class="content-top-bar">
+
+<div>
+<p id="item-count">12 items in</p>
+<h4 id="category-name">Mobile accessory</h4>
+</div>    
+
+<div>
+  <label for="verification">
+    <input type="checkbox" id="verification">verified Only
+  </label>
+</div>
+
+<select id="sort-select">
+  <option value="default">Default</option>
+  <option value="price-low">Price: Low to High</option>
+  <option value="price-high">Price: High to Low</option>
+  <option value="name-asc">Name: A to Z</option>
+  <option value="name-desc">Name: Z to A</option>
+</select>
+ </section>
+
+            <!-- content-section  -->
+        <section class="content-section">
+<div class="content-items">
+  <!-- 01 -->
+    <div class="item-card product-card" data-product-id="1" data-category="Electronics" data-brand="Samsung" data-features="metalic,super power" data-color="black" data-verified="true" data-name="GoPro HERO6 4k Action Headphone" data-price="99.50" data-image="Images/group1-item-headphone.jpg"> 
+        <div class="item-image">
+            <img src="Images/group1-item-headphone.jpg" alt="">
+        </div>
+        <div class="item-text">
+            <div class="price">
+                <h4>$99.50</h4> 
+                <del>@1128.00</del>
+            </div>
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <span>7.5</span>
+            </div>
+            <div class="about">
+                <p>GoPro HERO6 4k Action Headphone</p>
+            </div>
+        </div>
+    </div>
+   
+     <!-- 02 -->
+    <div class="item-card product-card" data-product-id="2" data-category="Electronics" data-brand="iphone" data-features="metalic,large memory" data-color="black" data-verified="true" data-name="Smart Watch Pro" data-price="99.50" data-image="Images/group1-item-watch.jpg"> 
+        <div class="item-image">
+            <img src="Images/group1-item-watch.jpg" alt="">
+        </div>
+        <div class="item-text">
+            <div class="price">
+                <h4>$99.50</h4> 
+                <del>@1128.00</del>
+            </div>
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <span>7.5</span>
+            </div>
+            <div class="about">
+                <p>GoPro HERO6 4k Action Headphone</p>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- 03 -->
+    <div class="item-card product-card" data-product-id="3" data-category="Electronics" data-brand="Techno" data-features="plastic cover,super power" data-color="orange" data-verified="false" data-name="Kitchen Mixer Pro" data-price="99.50" data-image="Images/group1-item-mixer.jpg"> 
+        <div class="item-image">
+            <img src="Images/group1-item-mixer.jpg" alt="">
+        </div>
+        <div class="item-text">
+            <div class="price">
+                <h4>$99.50</h4> 
+                <del>@1128.00</del>
+            </div>
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <span>7.5</span>
+            </div>
+            <div class="about">
+                <p>GoPro HERO6 4k Action Headphone</p>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- 04 -->
+    <div class="item-card product-card" data-product-id="4" data-category="Fashion" data-brand="Lenovo" data-features="metalic" data-color="pink" data-verified="true" data-name="Premium Perfume Collection" data-price="99.50" data-image="Images/group1-item-purfume.jpg"> 
+        <div class="item-image">
+            <img src="Images/group1-item-purfume.jpg" alt="">
+        </div>
+        <div class="item-text">
+            <div class="price">
+                <h4>$99.50</h4> 
+                <del>@1128.00</del>
+            </div>
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <span>7.5</span>
+            </div>
+            <div class="about">
+                <p>GoPro HERO6 4k Action Headphone</p>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- 05 -->
+    <div class="item-card product-card" data-product-id="5" data-category="Fashion" data-brand="Real me" data-features="plastic cover" data-color="khaki" data-verified="false" data-name="Designer Purse" data-price="99.50" data-image="Images/group1-item-purse.webp"> 
+        <div class="item-image">
+            <img src="Images/group1-item-purse.webp" alt="">
+        </div>
+        <div class="item-text">
+            <div class="price">
+                <h4>$99.50</h4> 
+                <del>@1128.00</del>
+            </div>
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <span>7.5</span>
+            </div>
+            <div class="about">
+                <p>GoPro HERO6 4k Action Headphone</p>
+            </div>
+        </div>
+    </div>
+
+
+
+     <!-- 06-->
+    <div class="item-card product-card" data-product-id="6" data-category="Shoes" data-brand="Samsung" data-features="large memory" data-color="yellow" data-verified="true" data-name="Sports Shoes" data-price="99.50" data-image="Images/group1-item-shoe.jpg"> 
+        <div class="item-image">
+            <img src="Images/group1-item-shoe.jpg" alt="">
+        </div>
+        <div class="item-text">
+            <div class="price">
+                <h4>$99.50</h4> 
+                <del>@1128.00</del>
+            </div>
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <span>7.5</span>
+            </div>
+            <div class="about">
+                <p>GoPro HERO6 4k Action Headphone</p>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- 07 -->
+    <div class="item-card product-card" data-product-id="7" data-category="Modern tech" data-brand="Techno" data-features="metalic,plastic cover" data-color="black" data-verified="true" data-name="Ergonomic Chair" data-price="99.50" data-image="Images/group1-item-chair.jpg"> 
+        <div class="item-image">
+            <img src="Images/group1-item-chair.jpg" alt="">
+        </div>
+        <div class="item-text">
+            <div class="price">
+                <h4>$99.50</h4> 
+                <del>@1128.00</del>
+            </div>
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <span>7.5</span>
+            </div>
+            <div class="about">
+                <p>GoPro HERO6 4k Action Headphone</p>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- 08 -->
+    <div class="item-card product-card" data-product-id="8" data-category="Mobile accessory" data-brand="iphone" data-features="super power,large memory" data-color="pink" data-verified="false" data-name="Mobile Accessory Set" data-price="99.50" data-image="Images/recomend-item-01.png"> 
+        <div class="item-image">
+            <img src="Images/recomend-item-01.png" alt="">
+        </div>
+        <div class="item-text">
+            <div class="price">
+                <h4>$99.50</h4> 
+                <del>@1128.00</del>
+            </div>
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <span>7.5</span>
+            </div>
+            <div class="about">
+                <p>GoPro HERO6 4k Action Headphone</p>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- 09 -->
+    <div class="item-card product-card" data-product-id="9" data-category="Electronics" data-brand="Lenovo" data-features="metalic" data-color="orange" data-verified="true" data-name="Electronics Bundle" data-price="99.50" data-image="Images/recomend-item-02.jpg"> 
+        <div class="item-image">
+            <img src="Images/recomend-item-02.jpg" alt="">
+        </div>
+        <div class="item-text">
+            <div class="price">
+                <h4>$99.50</h4> 
+                <del>@1128.00</del>
+            </div>
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <span>7.5</span>
+            </div>
+            <div class="about">
+                <p>GoPro HERO6 4k Action Headphone</p>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- 10 -->
+    <div class="item-card product-card" data-product-id="10" data-category="smartphones" data-brand="Real me" data-features="plastic cover,super power" data-color="khaki" data-verified="true" data-name="Smartphone Case" data-price="99.50" data-image="Images/recomend-item-04.png"> 
+        <div class="item-image">
+            <img src="Images/recomend-item-04.png" alt="">
+        </div>
+        <div class="item-text">
+            <div class="price">
+                <h4>$99.50</h4> 
+                <del>@1128.00</del>
+            </div>
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <span>7.5</span>
+            </div>
+            <div class="about">
+                <p>GoPro HERO6 4k Action Headphone</p>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- 11 -->
+    <div class="item-card product-card" data-product-id="11" data-category="Mobile accessory" data-brand="Samsung" data-features="large memory" data-color="yellow" data-verified="false" data-name="Mobile Charger" data-price="99.50" data-image="Images/recomend-item-03.png"> 
+        <div class="item-image">
+            <img src="Images/recomend-item-03.png" alt="">
+        </div>
+        <div class="item-text">
+            <div class="price">
+                <h4>$99.50</h4> 
+                <del>@1128.00</del>
+            </div>
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <span>7.5</span>
+            </div>
+            <div class="about">
+                <p>GoPro HERO6 4k Action Headphone</p>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- 12 -->
+    <div class="item-card product-card" data-product-id="12" data-category="Electronics" data-brand="iphone" data-features="metalic,plastic cover" data-color="black" data-verified="true" data-name="Electronic Device" data-price="99.50" data-image="Images/recomend-item-07.png"> 
+        <div class="item-image">
+            <img src="Images/recomend-item-07.png" alt="">
+        </div>
+        <div class="item-text">
+            <div class="price">
+                <h4>$99.50</h4> 
+                <del>@1128.00</del>
+            </div>
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <span>7.5</span>
+            </div>
+            <div class="about">
+                <p>GoPro HERO6 4k Action Headphone</p>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+</div>
+
+        </section>
+
+
+
+         <!-- newsLetter section  -->
+      <section class="news-letter">
+        <div class="news-letter-content">
+          <div id="news-top">
+            <h3>Subscribe on our newsletter</h3>
+            <p>
+              Get daily on upcoming offers from many suppliers over the world
+            </p>
+          </div>
+          <div id="news-bottom">
+            <input type="email" />
+            <button id="subscribe-btn">Subscribe</button>
+          </div>
+        </div>
+      </section>
+        </div>
+    </main>
+
+
+<!-- footer -->
+     <footer>
+      <div class="footer-top">
+        <div class="footer-col-1 col">
+          <div class="logo">
+            <h2>Brand</h2>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque possimus  ex.</p>
+          <div class="social-links">
+            <a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a>
+          </div>
+        </div>
+        <div class="footer-col-2 col">
+          <h3>About</h3>
+        <div class="links">
+          <a href="#">About Us</a>
+          <a href="#">Find Store</a>
+          <a href="#">categories</a>
+          <a href="#">Blogs</a>
+        </div>
+        </div>
+      
+        <div class="footer-col-2 col">
+          <h3>About</h3>
+        <div class="links">
+          <a href="#">Help Center</a>
+          <a href="#">Money refund</a>
+          <a href="#">shipping</a>
+          <a href="#">Contact Us</a>
+        </div>
+        </div>
+
+        <div class="footer-col-2 col">
+          <h3>About</h3>
+        <div class="links">
+          <a href="#">Login</a>
+          <a href="#">register</a>
+          <a href="#">Settings</a>
+          <a href="#">My Oredrs</a>
+        </div>
+        </div>
+
+
+        <div class="footer-col-2 col">
+          <h3>Get app</h3>
+          <div class="app-card">
+            <p>Download on the</p>
+            <h3>App Store</h3>
+          </div>
+          <div class="app-card">
+            <p>GET IT ON</p>
+            <h3>Google Play</h3>
+          </div>
+        </div>
+        </div>
+
+
+        
+      </div>
+      <div class="footer-bottom">
+        <p>© 2023 Ecommerce.</p>
+        <select name="" id="">
+          <option value="English">English</option>
+          <option value="English">England</option>
+          <option value="English">Pakistan</option>
+          <option value="English">India</option>
+        </select>
+      </div>
+    </footer>
+</body>
+</html>

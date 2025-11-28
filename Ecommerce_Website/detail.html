@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detail-page</title>
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="detail.css">
+    <script src="products-data.js" defer></script>
+    <script src="shared.js" defer></script>
+    <script src="cart-badge.js" defer></script>
+    <script src="detail.js" defer></script>
+    <script src="cart.js" defer></script>
+</head>
+<body data-page="detail">
+      <!-- header  -->
+    <header>
+      <div class="header">
+        <div class="brand-logo" style="cursor: pointer;" onclick="window.location.href='main.html'">
+          <i class="fa-brands fa-amazon"></i>
+          Brand
+        </div>
+
+        <div class="search-form">
+          <input type="search" placeholder="search" />
+          <select name="" id="">
+            <option value="all">All Category</option>
+            <option value="Headphone">Electronic</option>
+            <option value="Headphone">Fashion</option>
+            <option value="Headphone">Clothes</option>
+            <option value="Headphone">Shoes</option>
+          </select>
+          <button id="search-btn">Search</button>
+        </div>
+
+        <div class="actions">
+          <div class="profile-action action">
+            <i class="fa-solid fa-user"></i>
+            profile
+          </div>
+          <div class="message-action action">
+            <i class="fa-solid fa-message"></i>
+            Message
+          </div>
+          <div class="order-action action">
+            <i class="fa-solid fa-heart"></i>
+            Order
+          </div>
+          <div class="cart-action action" style="cursor: pointer;" onclick="window.location.href='cart.html'">
+            <i class="fa-solid fa-cart-shopping"></i>
+            My cart
+            <span class="badge" style="display: none; background: red; color: white; border-radius: 50%; padding: 2px 6px; font-size: 0.7rem; margin-left: 5px;">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="navbar">
+        <!-- lists  -->
+        <div class="nav-list">
+          <a href="#"><i class="fa-solid fa-bars"></i> All Category</a>
+          <a href="#">Hot offers</a>
+          <a href="#">Gift Boxes</a>
+          <a href="#">Projects</a>
+          <a href="#">Meu item</a>
+          <select name="help" id="">
+            <option value="Help">Help</option>
+          </select>
+        </div>
+
+        <div class="nav-right">
+          <div class="payment">
+            English ,
+            <select >
+              <option value="usd">USD</option>
+              <option value="usd">PKR</option>
+              <option value="inr">INR</option>
+            </select>
+          </div>
+          <div class="shipto">
+            Ship to
+            <select >
+              <option value="pakistan">Pakistan</option>
+              <option value="germany">Germany</option>
+              <option value="india">India</option>
+              <option value="england">England</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+       <div class="bread-cump">
+        <a href="main.html" style="cursor: pointer;">Home</a>
+        <a href="list.html" style="cursor: pointer;">Products</a>
+        <a href="#" style="cursor: pointer;">Product Details</a>
+    </div>
+    </header>
+
+    <main>
+        <div class="content-main">
+
+            <!-- product  -->
+            <div class="product">
+                <div class="product-image">
+                    <img src="./Images/recomend-item-05.png" alt="">
+                </div>
+                <div class="product-gallery">
+
+                    <div class="image">
+                        <img src="./Images/group1-item-keyboard.jpg" alt="">
+                    </div>
+
+                     <div class="image">
+                        <img src="./Images/group1-item-keyboard.jpg" alt="">
+                    </div>
+
+
+                     <div class="image">
+                        <img src="./Images/group1-item-keyboard.jpg" alt="">
+                    </div>
+
+                     <div class="image">
+                        <img src="./Images/group1-item-keyboard.jpg" alt="">
+                    </div>
+
+                     <div class="image">
+                        <img src="./Images/group1-item-keyboard.jpg" alt="">
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            <!-- info  -->
+             <div class="product-info">
+                <!-- available -->
+                <div class="available">In Stock</div>
+                <!-- title  -->
+                <div class="title">
+                    <h3>Mens Long Sleeve T-Shirt Cotton Base Layer Slim Muscle</h3>
+                </div>
+                <!-- rating  -->
+                 <div class="rating">
+                    <div class="stars">⭐⭐⭐⭐</div>
+                    <div class="reviews"><span>32Reviews</span></div>
+                    <div class="sold"><p>154 Sold</p></div>
+                 </div>
+                 <div class="trade-price">
+                    <div><b>$98.00</b> <p>50-100pcs</p></div>
+                    <div><b>$98.00</b> <p>50-100pcs</p></div>
+                    <div><b>$98.00</b> <p>50-100pcs</p></div>
+                 </div>
+
+                 <!-- short-info  -->
+                  <div class="short-info">
+                    <p><span>Price</span> :  <span>Negotiable</span></p>
+                    <p><span>Type</span> :  <span>Classic Shoes</span></p>
+                    <p><span>Material</span> :  <span>Plastics</span></p>
+                    <p><span>Desgin</span> :  <span>Modern nice</span></p>
+                    <p><span>Customization</span> :  <span>Customized logo and desgin packages</span></p>
+                    <p><span>Protection</span> :  <span>refund policy</span></p>
+                    <p><span>Warranty</span> :  <span>2years full Warranty</span></p>
+                  </div>
+                  <!-- Add to Cart Button -->
+                  <div class="add-to-cart-section" style="margin-top: 1.5rem;">
+                    <button id="add-to-cart-btn" style="padding: 1rem 2rem; background-color: #0d6efd; color: white; border: none; border-radius: 7px; font-size: 1rem; font-weight: bold; cursor: pointer; width: 100%; max-width: 300px;">
+                      <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                    </button>
+                    <button id="buy-now-btn" style="padding: 1rem 2rem; background-color: #28a745; color: white; border: none; border-radius: 7px; font-size: 1rem; font-weight: bold; cursor: pointer; width: 100%; max-width: 300px; margin-top: 0.5rem;">
+                      Buy Now
+                    </button>
+                  </div>
+             </div>
+
+
+             <!-- seller info  -->
+            <div class="seller-info">
+
+                <div class="seller-profile">
+                    <div class="logo"><h1>R</h1></div>
+                    <div class="seller-desc">
+                        <h2>Supplier</h2>
+                        <p>Guanjol Trading LLC</p>
+                    </div>
+                </div>
+                <hr>
+                <!-- seller-location -->
+                <div class="seller-location">
+                    <p>Germany</p>
+                </div>
+                <!-- sellerStatus  -->
+                 <div class="seller-status">
+                    <p>Verified</p>
+                 </div>
+                 <div class="seller-feature">
+                    <p>world wide shipping</p>
+                 </div>   
+                 <hr>
+                 <div class="actions">
+                    <button id="send-inquiry">send inquiry</button>
+                    <button id="seller-profile">Seller Profile</button>
+                 </div>
+            </div>
+            </div>
+
+            <!-- detailed more  -->
+
+            <section class="detail">
+
+<div class="detail-box">
+    <div class="filter-bar">
+        <span>Description</span>
+        <span>Reviews</span>
+        <span>Shipping</span>
+        <span>About Seller</span>
+    </div>
+<!-- Description -->
+    <div class="detail-desc">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate odio molestiae voluptatem explicabo quasi iste assumenda? Deleniti ullam unde facere perspiciatis sequi natus vero perferendis repellat assumenda, doloremque autem quisquam asperiores consequatur debitis dolorum iure labore, possimus distinctio error quod minima eligendi commodi hic! Magni fugiat at, earum aperiam suscipit expedita exercitationem vero enim accusantium. Unde, ipsa iste impedit dolorem eligendi itaque voluptatum eos voluptas omnis nihil sint quo, tenetur sapiente ea libero reprehenderit corrupti aperiam enim maxime fugit saepe laudantium labore similique. Recusandae nobis possimus enim velit assumenda nemo aperiam totam molestiae, quis unde eveniet laborum veritatis accusamus ad. Commodi, doloribus, amet nam dolores totam veniam ipsa ex incidunt, deleniti perspiciatis dolorum. Nam ullam eos eum libero. Optio in cum eligendi tenetur quisquam unde labo cum reprehenderit ex cumque modi placeat ab! Reiciendis dolor incidunt dicta, afficia voluptatibus libero rem, earum excepturi nesciunt. Voluptate deserunt, ecto id, officia dolor labore aspernatur fugiat dolore ratione deleniti possimus laboriosam harum, fugit rem!</p>
+    </div>
+
+
+    <!-- detail-info  -->
+     <div class="detail-info">
+<div><p>Mode</p> #524125441</div>        
+<div><p>Mode</p> #524125441</div>        
+<div><p>Mode</p> #524125441</div>        
+<div><p>Mode</p> #524125441</div>        
+<div><p>Mode</p> #524125441</div>        
+<div><p>Mode</p> #524125441</div>        
+     </div>
+<div class="detail-features">
+    
+     <p>some greate features name here</p>
+     <p>some greate features name here</p>
+     <p>some greate features name here</p>
+     <p>some greate features name here</p>
+</div>
+
+</div>
+
+<!-- aside items  -->
+<div class="aside-items">
+    <!-- title  -->
+    <div class="title"><h3>You may like</h3></div>
+
+    <div class="aside-item related-product" data-product-id="35" data-category="Fashion" data-name="Men Blazer sets" data-image="./Images/sale-item-01.jpg" data-price="99.00">
+        <div class="aside-item-image"><img src="./Images/sale-item-01.jpg" alt=""></div>
+        <div class="aside-item-desc">
+            <div class="aside-item-name"><p>Men Blazer sets</p></div>
+            <div class="aside-item-price">
+                <p>$7.00 - $99.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="aside-item related-product" data-product-id="36" data-category="Fashion" data-name="Men Blazer sets" data-image="./Images/sale-item-01.jpg" data-price="99.00">
+        <div class="aside-item-image"><img src="./Images/sale-item-01.jpg" alt=""></div>
+        <div class="aside-item-desc">
+            <div class="aside-item-name"><p>Men Blazer sets</p></div>
+            <div class="aside-item-price">
+                <p>$7.00 - $99.00</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="aside-item related-product" data-product-id="37" data-category="Fashion" data-name="Men Blazer sets" data-image="./Images/sale-item-01.jpg" data-price="99.00">
+        <div class="aside-item-image"><img src="./Images/sale-item-01.jpg" alt=""></div>
+        <div class="aside-item-desc">
+            <div class="aside-item-name"><p>Men Blazer sets</p></div>
+            <div class="aside-item-price">
+                <p>$7.00 - $99.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="aside-item related-product" data-product-id="38" data-category="Fashion" data-name="Men Blazer sets" data-image="./Images/sale-item-01.jpg" data-price="99.00">
+        <div class="aside-item-image"><img src="./Images/sale-item-01.jpg" alt=""></div>
+        <div class="aside-item-desc">
+            <div class="aside-item-name"><p>Men Blazer sets</p></div>
+            <div class="aside-item-price">
+                <p>$7.00 - $99.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="aside-item related-product" data-product-id="39" data-category="Fashion" data-name="Men Blazer sets" data-image="./Images/sale-item-01.jpg" data-price="99.00">
+        <div class="aside-item-image"><img src="./Images/sale-item-01.jpg" alt=""></div>
+        <div class="aside-item-desc">
+            <div class="aside-item-name"><p>Men Blazer sets</p></div>
+            <div class="aside-item-price">
+                <p>$7.00 - $99.00</p>
+            </div>
+        </div>
+    </div>
+</div>
+            </section>
+
+            <!-- recommended items  -->
+             <section class="recommended">
+                <!-- title  -->
+<div class="title"><h2>Related Products</h2></div>
+<!-- items  -->
+ <div class="recom-items-container">
+    <!-- 1 -->
+    <div class="recom-item related-product" data-product-id="40" data-category="Electronics" data-name="Xiamo Redmi 8 Original" data-image="./Images/recomend-item-04.png" data-price="40.00">
+        <div class="item-image">
+            <img src="./Images/recomend-item-04.png" alt="">
+        </div>
+<div class="item-desc">
+    
+        <div class="item-name"><p>Xiamo Redmi 8 Original</p></div>
+        <div class="item-price"><p>$32.00 - $40.00</p></div>
+</div>
+    </div>
+<!-- 2 -->
+    <div class="recom-item related-product" data-product-id="41" data-category="Electronics" data-name="Xiamo Redmi 8 Original" data-image="./Images/recomend-item-04.png" data-price="40.00">
+        <div class="item-image">
+            <img src="./Images/recomend-item-04.png" alt="">
+        </div>
+<div class="item-desc">
+    
+        <div class="item-name"><p>Xiamo Redmi 8 Original</p></div>
+        <div class="item-price"><p>$32.00 - $40.00</p></div>
+</div>
+    </div>
+
+<!-- 3 -->
+    <div class="recom-item related-product" data-product-id="42" data-category="Electronics" data-name="Xiamo Redmi 8 Original" data-image="./Images/recomend-item-04.png" data-price="40.00">
+        <div class="item-image">
+            <img src="./Images/recomend-item-04.png" alt="">
+        </div>
+<div class="item-desc">
+    
+        <div class="item-name"><p>Xiamo Redmi 8 Original</p></div>
+        <div class="item-price"><p>$32.00 - $40.00</p></div>
+</div>
+    </div>
+
+
+<!-- 4 -->
+    <div class="recom-item related-product" data-product-id="43" data-category="Electronics" data-name="Xiamo Redmi 8 Original" data-image="./Images/recomend-item-04.png" data-price="40.00">
+        <div class="item-image">
+            <img src="./Images/recomend-item-04.png" alt="">
+        </div>
+<div class="item-desc">
+    
+        <div class="item-name"><p>Xiamo Redmi 8 Original</p></div>
+        <div class="item-price"><p>$32.00 - $40.00</p></div>
+</div>
+    </div>
+
+
+
+<!-- 5 -->
+    <div class="recom-item related-product" data-product-id="44" data-category="Electronics" data-name="Xiamo Redmi 8 Original" data-image="./Images/recomend-item-04.png" data-price="40.00">
+        <div class="item-image">
+            <img src="./Images/recomend-item-04.png" alt="">
+        </div>
+<div class="item-desc">
+    
+        <div class="item-name"><p>Xiamo Redmi 8 Original</p></div>
+        <div class="item-price"><p>$32.00 - $40.00</p></div>
+</div>
+    </div>
+<!-- 6 -->
+    <div class="recom-item related-product" data-product-id="45" data-category="Electronics" data-name="Xiamo Redmi 8 Original" data-image="./Images/recomend-item-04.png" data-price="40.00">
+        <div class="item-image">
+            <img src="./Images/recomend-item-04.png" alt="">
+        </div>
+<div class="item-desc">
+    
+        <div class="item-name"><p>Xiamo Redmi 8 Original</p></div>
+        <div class="item-price"><p>$32.00 - $40.00</p></div>
+</div>
+    </div>
+
+ </div>
+             </section>
+
+             <!-- bannner  -->
+              <section class="banner">
+                <div class="text">
+                    <h2>Super discount on more than 100 USD</h2>
+                    <p>Have you ever finally just write dummy info</p>
+                </div>
+                <div class="btn">
+                    <button>Shop Now</button>
+                </div>
+              </section>
+    </main>
+
+
+     <footer>
+      <div class="footer-top">
+        <div class="footer-col-1 col">
+          <div class="logo">
+            <h2>Brand</h2>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque possimus  ex.</p>
+          <div class="social-links">
+            <a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a>
+          </div>
+        </div>
+        <div class="footer-col-2 col">
+          <h3>About</h3>
+        <div class="links">
+          <a href="#">About Us</a>
+          <a href="#">Find Store</a>
+          <a href="#">categories</a>
+          <a href="#">Blogs</a>
+        </div>
+        </div>
+      
+        <div class="footer-col-2 col">
+          <h3>About</h3>
+        <div class="links">
+          <a href="#">Help Center</a>
+          <a href="#">Money refund</a>
+          <a href="#">shipping</a>
+          <a href="#">Contact Us</a>
+        </div>
+        </div>
+
+        <div class="footer-col-2 col">
+          <h3>About</h3>
+        <div class="links">
+          <a href="#">Login</a>
+          <a href="#">register</a>
+          <a href="#">Settings</a>
+          <a href="#">My Oredrs</a>
+        </div>
+        </div>
+
+
+        <div class="footer-col-2 col">
+          <h3>Get app</h3>
+          <div class="app-card">
+            <p>Download on the</p>
+            <h3>App Store</h3>
+          </div>
+          <div class="app-card">
+            <p>GET IT ON</p>
+            <h3>Google Play</h3>
+          </div>
+        </div>
+        </div>
+
+
+        
+      </div>
+      <div class="footer-bottom">
+        <p>© 2023 Ecommerce.</p>
+        <select name="" id="">
+          <option value="English">English</option>
+          <option value="English">England</option>
+          <option value="English">Pakistan</option>
+          <option value="English">India</option>
+        </select>
+      </div>
+    </footer>
+</body>
+</html>
